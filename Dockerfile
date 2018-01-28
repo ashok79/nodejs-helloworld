@@ -1,9 +1,11 @@
 FROM ubuntu:17.10
-#RUN yum install -y nodejs npm
-sudo apt-get install -y nodejs npm
+RUN apt-get install --yes curl
 
-COPY package.json /src/package.json
-RUN cd /src; npm install --production
+RUN curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
+
+RUN apt-get install --yes nodejs
+
+RUN apt-get install --yes build-essential
 
 COPY . /src
 
