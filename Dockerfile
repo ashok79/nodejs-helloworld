@@ -1,7 +1,7 @@
 FROM ubuntu:17.10
-#RUN apt-get install --yes curl
+RUN apt-get install --yes curl
 
-RUN curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
+RUN curl --silent --location https://deb.nodesource.com/setup_4.x | bash -
 
 RUN apt-get install --yes nodejs
 
