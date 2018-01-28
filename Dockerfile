@@ -1,4 +1,5 @@
 FROM ubuntu:17.10
+RUN apt-get -qq update
 RUN apt-get install --yes curl
 
 RUN curl --silent --location https://deb.nodesource.com/setup_4.x | bash -
