@@ -10,7 +10,7 @@ RUN apt-get install --yes build-essential
 
 COPY . /src
 
-EXPOSE  8080
+EXPOSE  3000
 CMD ["node", "/src/app.js"]
 
 # $ docker build -t ashok/hello-world-nodejs .
