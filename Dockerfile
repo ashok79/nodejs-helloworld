@@ -11,7 +11,7 @@ RUN apt-get install --yes build-essential
 COPY . /src
 
 EXPOSE  3000
-CMD ["node", "/src/app.js"]
+CMD ["node", "/src/index.js"]
 
 # $ docker build -t ashok/hello-world-nodejs .
 # $ docker run -p 49160:8080 -d ashok/hello-world-nodejs
